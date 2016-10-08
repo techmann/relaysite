@@ -1,0 +1,26 @@
+{
+  "name": "relaysite",
+  "version": "1.0.0",
+  "description": "relaysite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techmann/relaysite.git"
+  },
+  "author": "luke gabrieli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techmann/relaysite/issues"
+  },
+  "homepage": "https://github.com/techmann/relaysite",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-webpack": "^1.5.0",
+    "sass": "^0.5.0",
+    "webpack": "^1.13.2"
+  }
+}
