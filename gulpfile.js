@@ -1,8 +1,9 @@
 'use strict';
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var webpack = require('gulp-webpack');
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    webpack = require('gulp-webpack'),
+    webserver = require('gulp-webserver');
 
 gulp.task('sass', function() {
   gulp.src('./app/sass/application.scss')
@@ -10,20 +11,21 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./public/css/'));
 });
 
+// sass watch
 gulp.task('sass:watch', function() {
   gulp.watch('./app/sass/**/*.scss', ['sass']);
 });
 
-// gulp.task('webpack', function() {
-//   return gulp.src('app/js/**/*.js')
-//     .pipe(webpack({
-//       output: {
-//         filename: 'bundle.js'
-//       },
-//     }))
-//     .pipe(gulp.dest('./public/js/'));
-// });
+// webserver
+gulp.task('webserver', function() {
+  gulp.src('public')
+    .pipe(webserver({
+      livereload: true,
+      open: true
+    }));
+});
 
+// copy html
 gulp.task('copyhtml', function() {
   var opts = {
     conditionals: true,
@@ -35,6 +37,7 @@ gulp.task('copyhtml', function() {
     .pipe(gulp.dest('./public/'));
 });
 
+// copy js
 gulp.task('copyjs', function() {
   var opts = {
     conditionals: true,
@@ -46,6 +49,6 @@ gulp.task('copyjs', function() {
     .pipe(gulp.dest('./public/js'));
 });
 
-gulp.task('build', ['sass', 'copyhtml', 'copyjs']);
+gulp.task('build', ['sass:watch', 'webserver']);
 gulp.task('default', ['build']);
 
