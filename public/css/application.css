@@ -1,2 +1,113 @@
-body {
-  background-color: grey; }
+.seabrizz-gradient {
+  background: #1CD8D2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #93EDC7, #1CD8D2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #93EDC7, #1CD8D2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.white-text {
+  color: white; }
+
+#relay-banner {
+  width: 100%;
+  height: 100%;
+  display: table;
+  position: relative; }
+  #relay-banner .outer {
+    display: table-cell;
+    vertical-align: middle; }
+    #relay-banner .outer .inner {
+      width: 700px;
+      margin: 0 auto;
+      position: relative; }
+      #relay-banner .outer .inner .phone {
+        width: 327px;
+        height: 546px;
+        float: left;
+        position: relative; }
+        #relay-banner .outer .inner .phone .video {
+          display: block;
+          position: absolute;
+          top: 62px;
+          left: 54px;
+          background: #FFF;
+          width: 220px;
+          height: 390px; }
+          #relay-banner .outer .inner .phone .video video {
+            width: 220px; }
+        #relay-banner .outer .inner .phone .phone-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(https://dl.dropboxusercontent.com/s/tx7bgz8nnveuvs8/phone.png);
+          background-size: 327px 538px;
+          background-repeat: no-repeat; }
+      #relay-banner .outer .inner .download {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -165px;
+        height: 330px;
+        width: 360px; }
+        #relay-banner .outer .inner .download .relay-logo {
+          width: 75px; }
+        #relay-banner .outer .inner .download .download-icon {
+          width: 280px; }
+        #relay-banner .outer .inner .download h1 {
+          font-size: 26px;
+          font-weight: 600; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* html .clearfix {
+  zoom: 1; }
+
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1; }
+
+/* IE7 */
+hr[class*=spacer--] {
+  margin: 0;
+  padding: 0;
+  border: none;
+  clear: both; }
+
+hr.spacer--gutter {
+  padding-bottom: 20px; }
+
+hr.spacer--gutter-double {
+  padding-bottom: 40px; }
+
+hr.spacer--gutter-triple {
+  padding-bottom: 60px; }
+
+hr.spacer--gutter-quad {
+  padding-bottom: 80px; }
+
+hr.spacer--gutter-half {
+  padding-bottom: 10px; }
+
+hr.spacer--gutter-third {
+  padding-bottom: 6.66667px; }
+
+hr.spacer--gutter-quarter {
+  padding-bottom: 5px; }
+
+hr.spacer--gutter-eighth {
+  padding-bottom: 2.5px; }
