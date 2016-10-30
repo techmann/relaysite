@@ -13,29 +13,43 @@
   width: 100%;
   height: 100%;
   display: table;
-  position: relative; }
+  position: relative;
+  /* Small only */
+  /* Medium Up */ }
   #relay-banner .outer {
     display: table-cell;
     vertical-align: middle; }
     #relay-banner .outer .inner {
-      width: 700px;
+      width: 100%;
       margin: 0 auto;
       position: relative; }
+      #relay-banner .outer .inner .download {
+        width: 85%;
+        margin: 0 auto; }
+        #relay-banner .outer .inner .download .relay-logo {
+          width: 90px; }
+        #relay-banner .outer .inner .download .download-icon {
+          width: 80%; }
+        #relay-banner .outer .inner .download h1 {
+          font-size: 22px; }
+  @media screen and (min-width: 640px) {
+    #relay-banner .outer .inner {
+      width: 640px; }
       #relay-banner .outer .inner .phone {
-        width: 327px;
-        height: 546px;
+        width: 300px;
+        height: 494px;
         float: left;
         position: relative; }
         #relay-banner .outer .inner .phone .video {
           display: block;
           position: absolute;
-          top: 62px;
-          left: 54px;
+          top: 58px;
+          left: 50px;
           background: #FFF;
-          width: 220px;
-          height: 390px; }
+          width: 202px;
+          height: 358px; }
           #relay-banner .outer .inner .phone .video video {
-            width: 220px; }
+            width: 202px; }
         #relay-banner .outer .inner .phone .phone-overlay {
           position: absolute;
           top: 0;
@@ -43,21 +57,21 @@
           width: 100%;
           height: 100%;
           background-image: url(https://dl.dropboxusercontent.com/s/tx7bgz8nnveuvs8/phone.png);
-          background-size: 327px 538px;
+          background-size: 300px 494px;
           background-repeat: no-repeat; }
       #relay-banner .outer .inner .download {
         position: absolute;
         top: 50%;
         right: 0;
-        margin-top: -165px;
-        height: 330px;
-        width: 360px; }
+        margin-top: -162px;
+        height: 324px;
+        width: 340px; }
         #relay-banner .outer .inner .download .relay-logo {
           width: 75px; }
         #relay-banner .outer .inner .download .download-icon {
           width: 280px; }
         #relay-banner .outer .inner .download h1 {
-          font-size: 26px; }
+          font-size: 24px; } }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
