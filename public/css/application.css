@@ -32,52 +32,153 @@
           width: 80%; }
         #relay-banner .outer .inner .download h1 {
           font-size: 22px; }
+  #relay-banner .down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 50px;
+    margin-left: -25px;
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite; }
+
+@-webkit-keyframes bounce {
+  0%, 50%, 100% {
+    -webkit-transform: translateY(0); }
+  25% {
+    -webkit-transform: translateY(-15px); }
+  75% {
+    -webkit-transform: translateY(-15px); } }
+
+@-moz-keyframes bounce {
+  0%, 50%, 100% {
+    -moz-transform: translateY(0); }
+  25% {
+    -moz-transform: translateY(-15px); }
+  75% {
+    -moz-transform: translateY(-15px); } }
+
+@-o-keyframes bounce {
+  0%, 50%, 100% {
+    -o-transform: translateY(0); }
+  25% {
+    -o-transform: translateY(-15px); }
+  75% {
+    -o-transform: translateY(-15px); } }
+
+@keyframes bounce {
+  0%, 50%, 100% {
+    transform: translateY(0); }
+  25% {
+    transform: translateY(-15px); }
+  75% {
+    transform: translateY(-15px); } }
   @media screen and (min-width: 640px) {
-    #relay-banner .outer .inner {
-      width: 640px; }
-      #relay-banner .outer .inner .phone {
-        width: 300px;
-        height: 494px;
-        float: left;
-        position: relative; }
-        #relay-banner .outer .inner .phone .video {
-          display: block;
+    #relay-banner {
+      padding: 60px 0; }
+      #relay-banner .outer .inner {
+        width: 640px; }
+        #relay-banner .outer .inner .phone {
+          width: 300px;
+          height: 494px;
+          float: left;
+          position: relative; }
+          #relay-banner .outer .inner .phone .video {
+            display: block;
+            position: absolute;
+            top: 58px;
+            left: 50px;
+            background: #FFF;
+            width: 202px;
+            height: 358px; }
+            #relay-banner .outer .inner .phone .video video {
+              width: 202px; }
+          #relay-banner .outer .inner .phone .phone-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://dl.dropboxusercontent.com/s/tx7bgz8nnveuvs8/phone.png);
+            background-size: 300px 494px;
+            background-repeat: no-repeat; }
+        #relay-banner .outer .inner .download {
           position: absolute;
-          top: 58px;
-          left: 50px;
-          background: #FFF;
-          width: 202px;
-          height: 358px; }
-          #relay-banner .outer .inner .phone .video video {
-            width: 202px; }
-        #relay-banner .outer .inner .phone .phone-overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-image: url(https://dl.dropboxusercontent.com/s/tx7bgz8nnveuvs8/phone.png);
-          background-size: 300px 494px;
-          background-repeat: no-repeat; }
-      #relay-banner .outer .inner .download {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        margin-top: -162px;
-        height: 324px;
-        width: 340px; }
-        #relay-banner .outer .inner .download .relay-logo {
-          width: 75px; }
-        #relay-banner .outer .inner .download .download-icon {
-          width: 280px; }
-        #relay-banner .outer .inner .download h1 {
-          font-size: 24px; } }
+          top: 50%;
+          right: 0;
+          margin-top: -162px;
+          height: 324px;
+          width: 340px; }
+          #relay-banner .outer .inner .download .relay-logo {
+            width: 75px; }
+          #relay-banner .outer .inner .download .download-icon {
+            width: 280px; }
+          #relay-banner .outer .inner .download h1 {
+            font-size: 24px; } }
+
+#relay-content {
+  /* Small only */
+  /* Medium Up */ }
+  #relay-content h2 {
+    font-weight: bold;
+    font-size: 24px; }
+    #relay-content h2 span {
+      background-color: #5de4cc;
+      color: white;
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      line-height: 35px;
+      border-radius: 50%;
+      margin-right: 8px; }
+  #relay-content p {
+    font-size: 20px;
+    line-height: 26px; }
+  #relay-content__gather img {
+    width: 150px; }
+  #relay-content__choose .friend-container {
+    width: 60px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 6px;
+    padding-top: 16px; }
+    #relay-content__choose .friend-container p {
+      font-size: 16px; }
+  #relay-content__send img {
+    width: 150px; }
+  @media screen and (min-width: 640px) {
+    #relay-content__choose .friend-container {
+      width: 70px;
+      height: 90px;
+      padding-top: 18px; } }
+
+#relay-footer {
+  /* Small only */
+  /* Medium Up */ }
+  #relay-footer .relay-logo {
+    float: left;
+    margin-left: 20px; }
+    #relay-footer .relay-logo img {
+      width: 24px; }
+  #relay-footer .download-link {
+    margin-right: 20px;
+    float: right; }
+    #relay-footer .download-link a {
+      font-size: 20px;
+      color: white; }
+  @media screen and (min-width: 640px) {
+    #relay-footer .relay-logo img {
+      width: 30px; }
+    #relay-footer .download-link a {
+      font-size: 24px; } }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  color: #303030; }
 
 .clearfix:after {
   visibility: hidden;
