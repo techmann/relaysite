@@ -14,6 +14,7 @@
     <!-- Angular 1.5.6 -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/application.css">
 </head>
@@ -33,7 +34,7 @@
                 <div class="download text-center">
                     <img class="relay-logo" src="https://dl.dropboxusercontent.com/s/2d9ikn8ifglwc28/relayLogo.png">
                     <hr class="spacer--gutter-double">
-                    <h1>Send mobile content to friends and family, separately.</h1>
+                    <h1 class="white-text">Send mobile content to friends and family, separately.</h1>
                     <hr class="spacer--gutter-triple">
                     <a href="https://itunes.apple.com/us/app/id1108185175" target="_blank">
                         <img class="download-icon" src="https://dl.dropboxusercontent.com/s/osjsvjlairvh3q0/appStoreDownload.png">
@@ -43,6 +44,131 @@
             </div>
         </div>
 
+        <div class="down-arrow">
+            <img src="https://dl.dropboxusercontent.com/s/zfsae6d7tl654rk/downarrow.png">
+        </div>
+
+    </div>
+
+    <div id="relay-content" class="column row text-center">
+        <hr class="spacer--gutter-quad">
+        <div id="relay-content__gather" class="row">
+            <div class="small-12">
+                <h2><span>1</span> Gather Your Content</h2>
+            </div>
+            <hr class="spacer--gutter-double">
+            <div class="small-12 medium-10 medium-offset-1">
+                <div class="row">
+                    <div class="small-8 small-offset-2 medium-offset-0 medium-4 columns">
+                        <img src="https://dl.dropboxusercontent.com/s/s91wgelsqp3nofj/paste.png">
+                        <hr class="spacer--gutter">
+                        <p>Paste a link, such as<br>an article or GIF</p>
+                    </div>
+                    <hr class="spacer--gutter-double show-for-small-only">
+                    <div class="small-8 small-offset-2 medium-offset-0 medium-4 columns">
+                        <img src="https://dl.dropboxusercontent.com/s/07ogrwslnx4qtkq/image.png">
+                        <hr class="spacer--gutter">
+                        <p>Choose a picture<br>from your library</p>
+                    </div>
+                    <hr class="spacer--gutter-double show-for-small-only">
+                    <div class="small-8 small-offset-2 medium-offset-0 medium-4 columns end">
+                        <img src="https://dl.dropboxusercontent.com/s/xupgn64tggvq2u2/photo.png">
+                        <hr class="spacer--gutter">
+                        <p>Snap a new photo<br>with your camera</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="spacer--gutter-quad">
+
+
+
+
+
+        <div id="relay-content__choose" class="row">
+            <div class="small-12">
+                <h2><span>2</span> Choose Your Friends</h2>
+            </div>
+            <hr class="spacer--gutter-double">
+            <div class="small-10 small-offset-1 medium-8 medium-offset-2">
+                <div class="row">
+                    <div class="small-3 medium-2 columns">
+                        <div class="friend-container seabrizz-gradient">
+                            <i class="em em-smile"></i>
+                            <p class="white-text">Amy</p>
+                        </div>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <div class="friend-container">
+                            <i class="em em-stuck_out_tongue_closed_eyes"></i>
+                            <p>Josh</p>
+                        </div>
+                    </div>
+                    <div class="medium-2 columns hide-for-small-only">
+                        <div class="friend-container">
+                            <i class="em em-innocent"></i>
+                            <p>Mom</p>
+                        </div>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <div class="friend-container seabrizz-gradient">
+                            <i class="em em-heart_eyes"></i>
+                            <p class="white-text">Bae</p>
+                        </div>
+                    </div>
+                    <div class="medium-2 columns hide-for-small-only">
+                        <div class="friend-container seabrizz-gradient">
+                            <i class="em em-blush"></i>
+                            <p class="white-text">Roomie</p>
+                        </div>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <div class="friend-container">
+                            <i class="em em-sunglasses"></i>
+                            <p>Luke</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <hr class="spacer--gutter-quad">
+        <div id="relay-content__send" class="row">
+            <div class="small-12">
+                <h2><span>3</span> Send Your Relay</h2>
+            </div>
+            <hr class="spacer--gutter-double">
+            <div class="small-12">
+                <img src="https://dl.dropboxusercontent.com/s/8dghwdmsvsfu0z2/newrelay.png">
+            </div>
+        </div>
+        <hr class="spacer--gutter-quad">
+        <div id="relay-content__done" class="row">
+            <div class="small-12">
+                <h2><span>4</span> Done!</h2>
+            </div>
+            <hr class="spacer--gutter-double">
+            <div class="small-10 small-offset-1">
+                <p>Relay sends your content to your friends, separately.</p>
+            </div>
+        </div>
+        <hr class="spacer--gutter-quad">
+    </div>
+
+    <div id="relay-footer" class="seabrizz-gradient white-text clearfix">
+        <hr class="spacer--gutter">
+        <div class="relay-logo">
+            <img src="https://dl.dropboxusercontent.com/s/2d9ikn8ifglwc28/relayLogo.png">
+        </div>
+        <div class="download-link">
+            <a href="https://itunes.apple.com/us/app/id1108185175" target="_blank">Download</a>
+        </div>
+        <hr class="spacer--gutter">
     </div>
 
     <script src="js/vendor/jquery.js"></script>
