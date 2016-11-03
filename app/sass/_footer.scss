@@ -1,0 +1,34 @@
+#relay-footer {
+	/* Small only */
+	.relay-logo {
+		float: left;
+		margin-left: 20px;
+		img {
+			width: 24px;
+		}
+	}
+
+	.download-link {
+		margin-right: 20px;
+		float: right;
+		a {
+			font-size: 20px;
+			color: white;
+		}
+	}
+
+	/* Medium Up */
+	@media screen and (min-width: $global-breakpoint) {
+		.relay-logo {
+			img {
+				width: 30px;
+			}
+		}
+
+		.download-link {
+			a {
+				font-size: 24px;
+			}
+		}
+	}
+}
